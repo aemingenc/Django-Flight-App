@@ -40,7 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     #third part
+    #login logout işlemleriiçin 
     'rest_framework',
+    "rest_framework.authtoken",
+    "dj_rest_auth",
+    #SETUP İÇİN
     'drf_yasg',
 
     #my apps
@@ -124,3 +128,16 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+#Token ile login için bunu ekledik.Loginden sonra user bilgilerinde tokende olsun die
+REST_AUTH_SERIALIZERS = {
+    "TOKEN_SERIALIZER": "users.serializers.CustomTokenSerializer",
+
+}
+
+REST_FRAMEWORK = {
+
+#Bunu ise 3 authhentication dan token authentication kullandıgımız için ekledik
+#diğer ikisi basic ve session authentication
+    "DEFAULT_AUTHHENTICATION_CLASSES":["rest_framework.authentication.TokenAuthentication"]
+
+}

@@ -18,7 +18,7 @@ schema_view = get_schema_view(
      permission_classes=[permissions.AllowAny],
  )
  
- 
+ #SETUP
 urlpatterns = [
      path("admin/", admin.site.urls),
      path(
@@ -33,4 +33,7 @@ urlpatterns = [
      ),
      path("redoc/", schema_view.with_ui("redoc", cache_timeout=0), name="schema-redoc"),
      path('__debug__/',include('debug_toolbar.urls')),
+     
+     #APPS URLS
+     path("users/",include("users.urls")),
  ]
