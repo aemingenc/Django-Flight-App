@@ -21,7 +21,7 @@ class RegisterSerializer(serializers.ModelSerializer):
 #zorunlu girilsin
         required = True,
 # hazır validate metodu ile valdate ettik
-        validtors = [validate_password],
+        validators = [validate_password],
 #yazarken password * seklinde gözüksün 
          style = {"input_type" : "password"}
 
