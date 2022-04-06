@@ -17,7 +17,7 @@
 
 ## Overview
 
-![screenshot](prewiev.jpg)
+![screenshot](prewiev.jpeg)
 
 ### Built With
 
