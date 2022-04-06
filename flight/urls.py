@@ -4,7 +4,7 @@ from .views import FlightView
 
 #bir router objesi belirledik
 router = routers.DefaultRouter()
-#register metodu ile ilk önce flights/sonra flightWiewden gelen yazzın dedik
+#register metodu ile ilk önce flights/sonra flightWiewden geleni yazzın dedik
 router.register('flights', FlightView)
 
 urlpatterns = [

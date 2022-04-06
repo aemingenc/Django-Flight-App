@@ -1,6 +1,4 @@
-from asyncore import write
-from dataclasses import field
-from importlib_metadata import requires
+
 from rest_framework import serializers
 from .models import Flight, Passenger, Reservation
 
