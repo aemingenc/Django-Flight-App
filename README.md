@@ -28,10 +28,7 @@
 ## How To Use
 
 
-
-
-
-bash
+```bash
 # Clone this repository
 $ git clone https://github.com/aemingenc/Django-Flight-App
 
@@ -43,6 +40,7 @@ $ git clone https://github.com/aemingenc/Django-Flight-App
 
 # Run the app
 $ python manage.py runserver
+```
 
 
 ## Acknowledgements
